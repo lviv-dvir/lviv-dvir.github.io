@@ -9,13 +9,12 @@
 title: ОСББ "Львівський Дворик"
 email: lviv.dvir@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  ЖЕКи відходять у минуле. Досить чекати, поки хтось за нас все зробить.
+  Важко дочекатися змін, доки сам не почнеш втілювати їх у життя.
+  ОСББ - це ми усі, одна сім'я, і ми повинні разом працювати над своїм спільним житлом.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lviv-dvir.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  lviv-dvir
 
 # Build settings
 markdown: kramdown
