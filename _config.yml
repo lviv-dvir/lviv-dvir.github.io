@@ -6,28 +6,28 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
+locale                   : "uk"
+title                    : "Львівський дворик"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Lvivskiy dvoryk"
+description              : "Сайт-блог ОСББ у Сихівському районі міста Львова"
+url                      : "http://dvoryk.lviv.ua"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-gh_repo                  :
+gh_repo                  : 
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 180
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : lvivskiy-dvoryk
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            : 5 # 5 (default)
+    colorscheme          : "light" # "light" (default), "dark"
 
 # SEO Related
 google_site_verification :
@@ -63,10 +63,10 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "ОСББ Львівський дворик"
+  avatar           : "hands.jpg"
+  bio              : "ЖЕКи відходять у минуле. Досить чекати, поки хтось за нас все зробить. Важко дочекатися змін, доки сам не почнеш втілювати їх у життя. ОСББ - це ми усі, одна сім'я, і ми повинні разом працювати над своїм спільним житлом."
+  location         : "Хоткевича 30а, Львів"
   email            :
   uri              :
   bitbucket        :
@@ -151,7 +151,7 @@ kramdown:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Europe/Kiev"
 
 
 # Plugins

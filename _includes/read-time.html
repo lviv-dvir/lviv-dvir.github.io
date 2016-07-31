@@ -5,12 +5,16 @@
 {% endif %}
 
 {% if site.words_per_minute %}
-  {% if words < 180 %}
-	  {{ site.data.ui-text[site.locale].less_than }} 1 {{ site.data.ui-text[site.locale].minute_read }}
-	{% elsif words < 360 %}
-	  1 {{ site.data.ui-text[site.locale].minute_read }}
+	{% assign minutes_read = words | divided_by:site.words_per_minute %}
+	{% assign minutes_read_mod10 = minutes_read | modulo:10 %}
+  {% if minutes_read < 1 %}
+	  {{ site.data.ui-text[site.locale].read_less_than }} 1 {{ site.data.ui-text[site.locale].minute_genetive }}!
+	{% elsif minutes_read_mod10 == 1 %}
+	  {{ site.data.ui-text[site.locale].read }} {{minutes_read}} {{ site.data.ui-text[site.locale].minute_accusative }}
+	{% elsif minutes_read_mod10 == 2 or minutes_read_mod10 == 3 or minutes_read_mod10 == 4 %}
+	  {{ site.data.ui-text[site.locale].read }} {{minutes_read}} {{ site.data.ui-text[site.locale].minute_genetive }}
 	{% else %}
-	  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[site.locale].minute_read }}
+	  {{ site.data.ui-text[site.locale].read }} {{minutes_read}} {{ site.data.ui-text[site.locale].minute_plural }}
 	{% endif %}
 {% else %}
   {{ site.data.ui-text[site.locale].undefined_wpm }}

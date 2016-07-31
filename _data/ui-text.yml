@@ -36,6 +36,39 @@ en-GB:
 en-AU:
   <<: *DEFAULT_EN
 
+# Ukrainian
+# -----------------
+uk: &DEFAULT_UK
+  page                  : "Сторінка"
+  pagination_previous   : "Попередня"
+  pagination_next       : "Наступна"
+  breadcrumb_home_label : "Головна"
+  breadcrumb_separator  : "/"
+  toc_label             : "На цій сторінці"
+  ext_link_label        : "Пряме посилання"
+  read_less_than        : "читати менше"
+  read                  : "читати"
+  minute_genetive       : "хвилини"
+  minute_accusative     : "хвилину"
+  minute_plural         : "хвилин"
+  share_on_label        : "Поділитися"
+  meta_label            :
+  tags_label            : "Теги:"
+  categories_label      : "Категорії:"
+  date_label            : "Останнє оновлення:"
+  comments_label        : "Залишити коментар"
+  more_label            : "Більше"
+  related_label         : "Вам також сподобається"
+  follow_label          : "Слідкуйте за нами:"
+  feed_label            : "Feed"
+  powered_by            : "Powered by"
+  website_label         : "Website"
+  email_label           : "е-мейл"
+  recent_posts          : "Новини"
+  undefined_wpm         : "Немає значення для параметру words_per_minute у _config.yml"
+ru:
+  <<: *DEFAULT_UK
+
 # Spanish
 # --------------
 es: &DEFAULT_ES
