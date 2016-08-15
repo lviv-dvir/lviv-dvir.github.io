@@ -1,0 +1,21 @@
+{% if post.read_time %}
+  {% assign words = post.content | strip_html | number_of_words %}
+{% elsif page.read_time %}
+  {% assign words = page.content | strip_html | number_of_words %}
+{% endif %}
+
+{% if site.words_per_minute %}
+	{% assign minutes_read = words | divided_by:site.words_per_minute %}
+	{% assign minutes_read_mod10 = minutes_read | modulo:10 %}
+  {% if minutes_read < 1 %}
+	  {{ site.data.ui-text[site.locale].read_less_than }} 1 {{ site.data.ui-text[site.locale].minute_genetive }}!
+	{% elsif minutes_read_mod10 == 1 %}
+	  {{ site.data.ui-text[site.locale].read }} {{minutes_read}} {{ site.data.ui-text[site.locale].minute_accusative }}
+	{% elsif minutes_read_mod10 == 2 or minutes_read_mod10 == 3 or minutes_read_mod10 == 4 %}
+	  {{ site.data.ui-text[site.locale].read }} {{minutes_read}} {{ site.data.ui-text[site.locale].minute_genetive }}
+	{% else %}
+	  {{ site.data.ui-text[site.locale].read }} {{minutes_read}} {{ site.data.ui-text[site.locale].minute_plural }}
+	{% endif %}
+{% else %}
+  {{ site.data.ui-text[site.locale].undefined_wpm }}
+{% endif %}
