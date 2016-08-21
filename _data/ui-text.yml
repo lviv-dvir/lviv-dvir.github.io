@@ -59,7 +59,7 @@ uk: &DEFAULT_UK
   comments_label        : "Залишити коментар"
   more_label            : "Більше"
   related_label         : "Вам також сподобається"
-  follow_label          : "Слідкуйте за нами:"
+  follow_label          : "Стежте за нами:"
   feed_label            : "Feed"
   powered_by            : "Powered by"
   website_label         : "Website"
