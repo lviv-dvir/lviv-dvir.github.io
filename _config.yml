@@ -11,7 +11,7 @@ title                    : "Львівський дворик"
 title_separator          : "-"
 name                     : "Lvivskiy dvoryk"
 description              : "Сайт-блог ОСББ у Сихівському районі міста Львова"
-url                      : "http://dvoryk.lviv.ua"
+url                      : "http://dvoruk.lviv.ua"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  : 
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
