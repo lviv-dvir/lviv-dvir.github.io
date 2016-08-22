@@ -52,9 +52,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal"
   google:
-    tracking_id          :
+    tracking_id          : "UA-82994908-1"
 
 # Google AdSense
 google_ad_client         :
@@ -67,7 +67,7 @@ author:
   avatar           : "hands.jpg"
   bio              : "ЖЕКи відходять у минуле. Досить чекати, поки хтось за нас все зробить. Важко дочекатися змін, доки сам не почнеш втілювати їх у життя. ОСББ - це ми усі, одна сім'я, і ми повинні разом працювати над своїм спільним житлом."
   location         : "Хоткевича 30а, Львів"
-  email            :
+  email            : lviv.dvoruk@gmail.com
   uri              :
   bitbucket        :
   codepen          :
