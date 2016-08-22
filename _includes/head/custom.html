@@ -1,5 +1,7 @@
 <!-- start custom head snippets -->
-
+{% if site.comments.facebook.appid %}
+<meta property="fb:app_id" content="{{ site.comments.facebook.appid }}" />
+{% endif %}
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
