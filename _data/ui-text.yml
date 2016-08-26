@@ -58,7 +58,7 @@ uk: &DEFAULT_UK
   date_label            : "Останнє оновлення:"
   comments_label        : "Залишити коментар"
   more_label            : "Більше"
-  related_label         : "Вам також сподобається"
+  related_label         : "Вам також буде цікаво"
   follow_label          : "Стежте за нами:"
   feed_label            : "Feed"
   powered_by            : "Powered by"
