@@ -1,3 +1,9 @@
 main:
     - title: "Залишити звернення"
       url: https://goo.gl/forms/UgntF71BpkhhfdqM2
+      
+    - title: "ІНФОЛЬВІВ"
+      url: https://infolviv.com.ua/dashboard
+      
+    - title: "ОСББ-online"
+      url: https://osbb-online.com/Account/LogOn?showRegistrationBox=True
